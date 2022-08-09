@@ -1,0 +1,15 @@
+---
+development:
+  dialect: postgres
+  database: {{envOr "DATABASE_NAME" "digitask_development"}}
+  user: {{envOr "DATABASE_USER" "postgres"}}
+  password: {{envOr "DATABASE_PASSWORD" "postgres"}}
+  host: {{envOr "DATABASE_HOST" "127.0.0.1"}}
+  port: {{envOr "DATABASE_PORT" "5432"}}
+  pool: 5
+
+test:
+  url: {{envOr "TEST_DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/digitask_test?sslmode=disable"}}
+
+production:
+  url: {{envOr "DATABASE_URL" "postgres://postgres:postgres@127.0.0.1:5432/digitask_production?sslmode=disable"}}
