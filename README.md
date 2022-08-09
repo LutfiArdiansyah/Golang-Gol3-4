@@ -13,7 +13,7 @@ Digitask uses several tools to work properly:
 
 ## Installation
 
-Dillinger requires [Go Language](https://go.dev/dl/) v1.19, [Soda CLI](https://gobuffalo.io/documentation/database/soda/), [Buffalo](https://gobuffalo.io/documentation/getting_started/installation/) to run.
+Digitask requires [Go Language](https://go.dev/dl/) v1.19, [Soda CLI](https://gobuffalo.io/documentation/database/soda/), [Buffalo](https://gobuffalo.io/documentation/getting_started/installation/) to run.
 
 Setup .env file to set the database configuration, If you change the ```PORT```, make sure to update the port on index.html.
 
